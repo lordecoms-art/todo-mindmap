@@ -54,26 +54,12 @@ export default function App() {
           <div className="logo">
             <div className="logo-icon">TM</div>
             <span className="logo-text">ToDo</span>
-            <span className="logo-sub">Mindmap</span>
           </div>
-
           <div className="header-stats">
-            <div className="stat-box cyan">
-              <div className="stat-value">{projects.length}</div>
-              <div className="stat-label">Projets</div>
-            </div>
-            <div className="stat-box purple">
-              <div className="stat-value">{totalTasks}</div>
-              <div className="stat-label">Tâches</div>
-            </div>
-            <div className="stat-box yellow">
-              <div className="stat-value">{inProgressTasks}</div>
-              <div className="stat-label">En cours</div>
-            </div>
-            <div className="stat-box green">
-              <div className="stat-value">{doneTasks}/{totalTasks}</div>
-              <div className="stat-label">Fait</div>
-            </div>
+            <div className="stat-pill cyan">{projects.length}<span>proj</span></div>
+            <div className="stat-pill purple">{totalTasks}<span>tâches</span></div>
+            <div className="stat-pill yellow">{inProgressTasks}<span>cours</span></div>
+            <div className="stat-pill green">{doneTasks}/{totalTasks}<span>fait</span></div>
           </div>
         </div>
         <div className="header-progress">
