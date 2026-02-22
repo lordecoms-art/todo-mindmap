@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ECDC4"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <!-- Central brain/mind circle -->
+  <circle cx="256" cy="240" r="64" fill="none" stroke="url(#node)" stroke-width="8"/>
+  <!-- Brain lines -->
+  <path d="M230 220 Q256 195 282 220" fill="none" stroke="url(#node)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M225 245 Q256 270 287 245" fill="none" stroke="url(#node)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="256" y1="210" x2="256" y2="270" stroke="url(#node)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Branch nodes -->
+  <line x1="205" y1="210" x2="140" y2="150" stroke="url(#node)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="130" cy="140" r="22" fill="url(#node)" opacity="0.3"/>
+  <line x1="307" y1="210" x2="372" y2="150" stroke="url(#node)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="382" cy="140" r="22" fill="url(#node)" opacity="0.3"/>
+  <line x1="205" y1="270" x2="140" y2="330" stroke="url(#node)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="130" cy="340" r="22" fill="url(#node)" opacity="0.3"/>
+  <line x1="307" y1="270" x2="372" y2="330" stroke="url(#node)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="382" cy="340" r="22" fill="url(#node)" opacity="0.3"/>
+  <!-- Checkmark in bottom node -->
+  <path d="M120 340 L128 350 L145 328" fill="none" stroke="#0a0a0f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <!-- Text -->
+  <text x="256" y="420" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="48" fill="#fff" opacity="0.9">ToDo</text>
+</svg>
